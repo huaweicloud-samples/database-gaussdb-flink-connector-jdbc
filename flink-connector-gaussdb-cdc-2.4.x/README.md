@@ -1,6 +1,7 @@
 # Flink GaussDB CDC Connector 2.4.x
 
-GaussDB CDC 连接器，支持 Flink 2.4.x，基于 WAL 逻辑解码（mppdb_decoding）实时捕获数据变更。
+GaussDB CDC Connector 2.4.x，基于稳定的 SourceFunction API，兼容 Flink 1.13–1.17，
+并通过 WAL 逻辑解码（mppdb_decoding）实时捕获数据变更。
 
 ## 核心特性
 
@@ -15,13 +16,15 @@ GaussDB CDC 连接器，支持 Flink 2.4.x，基于 WAL 逻辑解码（mppdb_dec
 
 | 连接器版本 | Flink 版本 | GaussDB 版本 | JAR 包 |
 |-----------|-----------|-------------|--------|
-| flink-connector-gaussdb-cdc-2.4.x | 2.4.x | 505.2.1.SPC0800+ | fat (1.7MB) / thin (100KB) |
+| flink-connector-gaussdb-cdc-2.4.x | 1.13–1.17 | 505.2.1.SPC0800+ | fat (1.7MB) / thin (100KB) |
+
+> `2.4.x` 表示 GaussDB CDC Connector 的版本线，不是 Apache Flink 运行时版本。
 
 ## 前置条件
 
 ### 系统要求
 - JDK 8/11
-- Flink 2.4.x
+- Flink 1.13–1.17
 
 ### 数据库要求
 
